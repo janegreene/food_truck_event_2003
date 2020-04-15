@@ -48,6 +48,8 @@ class FoodTruckTest < Minitest::Test
     item2 = Item.new({name: 'Apple Pie (Slice)', price: '$2.50'})
 
     food_truck.stock(item1, 30)
+    food_truck.stock(item2, 12)
+    food_truck.stock(item1, 25)
 
     # assert_equal ({item1 => 30}),food_truck.inventory
     assert_equal 30, food_truck.check_stock(item1)
