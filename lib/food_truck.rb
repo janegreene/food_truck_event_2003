@@ -7,6 +7,7 @@ class FoodTruck
   end
 
   def check_stock
+    require "pry"; binding.pry
 
   end
 
