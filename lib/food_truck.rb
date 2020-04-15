@@ -18,12 +18,12 @@ class FoodTruck
 
 
   def stock(item, count)
-    # if @inventory[item].key == item
-    #   @inventory[item] += count
-    # else
+    if @inventory[item].key == item
+     @inventory[item] += count
+    else
       @inventory[item] = count
       # require "pry"; binding.pry
-    # end
+    end
   end
 
 end
