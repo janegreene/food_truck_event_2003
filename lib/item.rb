@@ -5,8 +5,4 @@ class Item
     @price = argument[:price].delete( "$" ).to_f
   end
 
-  # def price
-  #   @price.to_f
-  # end
-
 end
