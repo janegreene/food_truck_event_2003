@@ -6,8 +6,9 @@ class FoodTruck
     @inventory = {}
   end
 
-  def check_stock
-    require "pry"; binding.pry
+  def check_stock(item)
+    @inventory.count
+    # require "pry"; binding.pry
 
   end
 
