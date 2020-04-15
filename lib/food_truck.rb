@@ -7,9 +7,17 @@ class FoodTruck
   end
 
   def check_stock(item)
-    @inventory.count
-    require "pry"; binding.pry
+    @inventory.each do |thing|
+     require "pry"; binding.pry
+   end
+  end
 
+  def stock(item, count)
+    if @inventory[item].key?
+      @inventory[item] += count
+    else
+      @inventory[item] = count
+    end
   end
 
 end
